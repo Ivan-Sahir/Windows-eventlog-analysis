@@ -1,0 +1,9 @@
+# Description: 
+Detects logon sessions where special privileges were assigned (EventCode 4672). This often indicates administrative logins or potential privilege escalation events.
+
+# Grouped
+index=main sourcetype=WinEventLog:Security EventCode=4672
+| stats count by Account_Name, host
+
+# Not Gouped
+index=main sourcetype=WinEventLog:Security EventCode=4672
