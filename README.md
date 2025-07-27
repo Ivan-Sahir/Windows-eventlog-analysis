@@ -8,7 +8,7 @@ I simulated basic SOC analyst tasks such as detecting failed login attempts, pri
 # Overview
 
 - Set up Splunk on Windows
-- Ingest native Windows logs (Security, System, Application)
+- Ingest native Windows logs
 - Detect suspicious activity using SPL
 - Visualize login patterns and alerts in dashboards
 
@@ -23,7 +23,7 @@ I simulated basic SOC analyst tasks such as detecting failed login attempts, pri
 |----------|----------------|
 | Failed logins | `queries/failed_logins.spl` |
 | Successful logins | `queries/successful_logins.spl` |
-| Special Privileges Assigned at Logon | `queries/privilege_assigned.spl` |
+| Special Privileges Assigned at Logon | `queries/privileged_logons.spl` |
 | Process Created | `queries/process_creation.spl` |
 
 
