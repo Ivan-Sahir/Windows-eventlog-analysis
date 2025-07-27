@@ -1,0 +1,10 @@
+# Description: 
+Lists all process creation events (EventCode 4688) to help detect suspicious behavior like unexpected command-line tools or LOLBins being executed.
+
+# List of events
+index=main sourcetype=WinEventLog:Security EventCode=4688
+| table _time, Account_Name, New_Process_Name, Creator_Process_Name, host
+
+# Count of attempts 
+index=main sourcetype=WinEventLog:Security EventCode=4688
+| stats count by New_Process_Name
