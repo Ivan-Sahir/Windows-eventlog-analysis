@@ -11,6 +11,7 @@ I simulated basic SOC analyst tasks such as detecting failed login attempts, pri
 - Ingest native Windows logs
 - Detect suspicious activity using SPL
 - Visualize login patterns and alerts in dashboards
+- Build a visual dashboard to monitor critical security events
 
 # Tools Used
 
@@ -32,5 +33,6 @@ I simulated basic SOC analyst tasks such as detecting failed login attempts, pri
 - How to ingest and explore Windows Event Logs in Splunk
 - Writing SPL queries for real-world detections
 - Visualizing time-based log patterns
+- Creating dashboards to visualize key detections
 
 
