@@ -1,0 +1,9 @@
+# Description:
+This query identifies succesfull Windows login attempts (`EventCode 4624`), grouped by user and host.
+
+# Grouped
+index=* sourcetype=WinEventLog:Security EventCode=4624
+| stats count by Account_Name, host
+
+# Not Grouped
+index=* sourcetype=WinEventLog:Security EventCode=4624
